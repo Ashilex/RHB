@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 .prova{
     background-image: url("../IMG/1749px-RhB_ABe_4-4_III_Kreisviadukt_Brusio.jpg");
     background-size: cover;
@@ -14,17 +19,33 @@
 
 }
 body{
-    margin-left: 0px;
+    margin:0;
+    padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
 }
 #blocco1{
+    border: 3px solid green;
+
     background-image: url("../IMG/1749px-RhB_ABe_4-4_III_Kreisviadukt_Brusio.jpg");
 }
 
 #blocco2{
+    position: relative;
     background-image: url("../IMG/bernina-express-unplash.jpg");
+    /*transform: ;*/
+    transform: translateY(0vh) translateZ(0.50px) scale(0.5);
+    /*transform-origin: ;*/
+    border: 3px solid red;
 }
 .misure {
-    border: 3px solid red;
+    background-repeat: no-repeat;
+
     /*width: 100vw;*/
     /*height: 600px;*/
     /*Questo valore dipende direttamente dal ratio dell'immagine che vogliamo avere come */
@@ -48,3 +69,14 @@ body{
     /*background-size: cover;*/
     background-image: url("../IMG/bernina-express-unplash.jpg");
 }
+
+
+/*img {*/
+/*    backdrop-filter: blur(10px);*/
+/*    !*filter: blur(20px);*!*/
+/*}*/
+
+/*.blurro {*/
+/*    border: 3px solid chartreuse;*/
+/*    backdrop-filter: blur(10px);*/
+/*}*/

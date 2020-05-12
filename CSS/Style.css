@@ -50,7 +50,7 @@ img {
 }
 
 img:last-of-type {
-    transform: translateZ(.6px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+    transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
 
 .slide:before {
@@ -93,7 +93,7 @@ img:last-of-type {
 }
 
 #title {
-    background-image: url("https://lorempixel.com/640/480/abstract/6/");
+    background-image: url("../IMG/1749px-RhB_ABe_4-4_III_Kreisviadukt_Brusio.jpg");
     z-index:2;
 }
 
@@ -103,13 +103,13 @@ img:last-of-type {
 
 }
 
-#slide1:before {
-    background-image: url("https://lorempixel.com/640/480/abstract/4/");
+#slide1::before {
+    background-image: url("../IMG/bernina-express-unplash.jpg");
     transform: translateZ(-1px) scale(2);
 }
 
 #slide2 {
-    background-image: url("https://lorempixel.com/640/480/abstract/3/");
+    background-image: url("../IMG/treno_su_ponte.jpg");
     z-index:2;
 }
 

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100vh;
+}
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 105vh;
+    display: block;
+}
+.cover {
+    height: 100vmax;
+}
+.shadow-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter:
+            drop-shadow(4px 0px 0 rgba(200, 200, 200, 0.5))
+            drop-shadow(-4px 0px 0 rgba(100, 100, 100, 0.55));
+}
+.clip {
+    height: 10vmax;
+    box-shadow: inset 5px 5px 5px white;
+    clip-path: path('M89.23,1s-111,59-84,108,92,0,92,0,48-33,41,6-4,149,36,122,76-71,45-104-99-56-25-57,97,104,132,75,70-35,39-81-140-69-160-69Z');
+    filter: blur(10px);
+}
+
