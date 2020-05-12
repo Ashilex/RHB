@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/vetro.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>Risorsa 1</title><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><path class="cls-1" d="M89.23,1s-111,59-84,108,92,0,92,0,48-33,41,6-4,149,36,122,76-71,45-104-99-56-25-57,97,104,132,75,70-35,39-81-140-69-160-69Z"/></g></g></svg><img class="cover" src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80">
+<div class="shadow-wrap">
+    <img class="clip" src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80">
+</div>
+
+<svg viewBox="0 0 1000 1000">
+    <filter id="smallDistortion">
+        <feTurbulence type="turbulence" baseFrequency="0.05"
+                      numOctaves="2" result="turbulence"/>
+        <feDisplacementMap in2="turbulence" in="SourceGraphic"
+                           scale="10" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="largeDistortion">
+        <feTurbulence type="turbulence" baseFrequency="0.05"
+                      numOctaves="2" result="turbulence"/>
+        <feDisplacementMap in2="turbulence" in="SourceGraphic"
+                           scale="20" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+</svg>
+
+<svg>
+    <clipPath id="myPath" clipPathUnits="objectBoundingBox">
+        <path d="M0.5,1
+      C 0.5,1,0,0.7,0,0.3
+      A 0.25,0.25,1,1,1,0.5,0.3
+      A 0.25,0.25,1,1,1,1,0.3
+      C 1,0.7,0.5,1,0.5,1 Z" />
+    </clipPath>
+</svg>
+
+</body>
+</html>
